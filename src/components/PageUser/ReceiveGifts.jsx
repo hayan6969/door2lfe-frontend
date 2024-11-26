@@ -75,7 +75,7 @@ const ReceiveGifts = () => {
         <p className="mb-4 font-semibold">{t("currentDoorLabel")}</p>
         <Link to={`/userpage/receive-gift`}>
           <Button className="text-xs text-black bg-greengrass hover:bg-grassGreen sm:text-sm">
-            {currentDoor ? `${t("door")} ${currentDoor - 1}` : t("Door 14")}
+            {currentDoor ? `${t("door")} ${currentDoor}` : t("Door 14")}
           </Button>
         </Link>
       </CardContent>

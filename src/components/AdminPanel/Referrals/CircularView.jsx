@@ -30,9 +30,9 @@ const ReferralTreeCanvas = () => {
     // Previous drawTree implementation remains the same
     const tiers = [
       { radius: 0, orbitRadius: 0, color: "#FF0000", members: 1 },
-      { radius: 150, orbitRadius: 150, color: "#59F2D9", members: 2 },
-      { radius: 250, orbitRadius: 250, color: "#42D17F", members: 4 },
-      { radius: 350, orbitRadius: 350, color: "#00FF00", members: 8 },
+      { radius: 150, orbitRadius: 150, color: "#d6ba04", members: 2 },
+      { radius: 250, orbitRadius: 250, color: "#287FF9", members: 4 },
+      { radius: 350, orbitRadius: 350, color: "#008000", members: 8 },
     ];
 
     // Draw orbit circles
@@ -67,7 +67,7 @@ const ReferralTreeCanvas = () => {
       ctx.setLineDash([]);
 
       if (!isEmpty && user) {
-        ctx.fillStyle = "#000";
+        ctx.fillStyle = "#fff";
         ctx.font = "11px Arial";
         ctx.textAlign = "center";
         ctx.fillText(user.username || "User", x, y - 2);
